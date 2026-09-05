@@ -1,0 +1,17 @@
+MoviesAura V12 — Clickable Card Foundation
+
+Base: V11
+
+Applied:
+- Movie, Web Series and TV Show cards have a reusable click-navigation foundation.
+- The title inside each card follows the same destination as the card.
+- Existing V11 visual design is preserved.
+- Firebase integration can later populate each card's data-detail-url with the
+  Firebase document-specific detail/download page.
+
+Example:
+data-detail-url="movie.html?id=FIREBASE_DOCUMENT_ID"
+
+When Firebase rendering is implemented, call:
+window.MoviesAuraCardNavigation.refresh();
+after new cards are inserted into the DOM.
